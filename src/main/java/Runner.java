@@ -74,8 +74,8 @@ public class Runner {
 
 //        2. Print the difference between the largest and smallest value
         //Collections.sort(numbers);
-        System.out.println("TASK EX2: Difference --> " +(numbers.get(numbers.size()-1)-numbers.get(0)));
-
+        //System.out.println("TASK EX2: Difference --> " + (numbers.get(numbers.size()-1)-numbers.get(0)));
+        System.out.println("TASK EX2: Difference --> " + (Collections.max(numbers)-Collections.min(numbers)));
 
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
         boolean sameNumber;
