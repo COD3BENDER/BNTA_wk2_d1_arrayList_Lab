@@ -73,8 +73,9 @@ public class Runner {
         System.out.println("TASk EX 1: print even numbers --> "+evenNumbers);
 
 //        2. Print the difference between the largest and smallest value
-        Collections.sort(numbers);
+        //Collections.sort(numbers);
         System.out.println("TASK EX2: Difference --> " +(numbers.get(numbers.size()-1)-numbers.get(0)));
+
 
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
         boolean sameNumber;
@@ -99,14 +100,13 @@ public class Runner {
 //
 //          So [2, 7, 13, 2] would have sum of 9.
         int sum_EX5 = 0;
+        int nextNumber = 0;
         for (int i = 0; i < numbers.size(); i++) {
-            if(numbers.get(i) == 13){
-                break;
+            if(numbers.get(i)>1 && numbers.get(i-1) == 13 || numbers.get(i) == 13){
+                continue;
             }
             sum_EX5 += numbers.get(i);
         }
-        System.out.println("TASK EX5: sum without 13 and after --> "+sum_EX5);
-
+        System.out.println("TASK EX5: sum without 13 and after --> " + sum_EX5);
     }
-
 }
